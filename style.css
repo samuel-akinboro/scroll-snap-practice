@@ -9,11 +9,6 @@ body {
   /* height: 100vh; */
 }
 
-main {
-  background-color: blue;
-  height: 100vh;
-}
-
 .parent {
   height: 100vh;
   scroll-snap-type: y mandatory;
