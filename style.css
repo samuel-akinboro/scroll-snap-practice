@@ -1,17 +1,27 @@
-/* * {
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-} */
+}
 
 body {
+  /* overflow: auto; */
+  /* height: 100vh; */
+}
+
+main {
+  background-color: blue;
+  height: 100vh;
+}
+
+.parent {
+  height: 100vh;
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
-  margin: 0;
 }
 
 section {
-  height: calc(100vh - 14em);
+  height: 100vh;
   background-color: brown;
   color: #fff;
   scroll-snap-align: start;
@@ -29,3 +39,11 @@ section:nth-child(3) {
 section:nth-child(4) {
   background-color: rgba(47, 79, 13, 0.593);
 }
+/* 
+@supports (scroll-snap-align: start) {
+  body {
+    scroll-snap-type: y proximity;
+    scroll-padding-top: 15vh;
+    overflow-y: scroll;
+  }
+} */
